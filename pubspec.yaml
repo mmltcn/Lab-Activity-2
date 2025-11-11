@@ -1,0 +1,38 @@
+name: lab_activity_2
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.7
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/dots.svg
+    # OR to add everything in the folder:
+    - assets/icons/
+  fonts:
+    - family: CustomFontBold # Use this name in your SVG and Text widgets
+      fonts:
+        - asset: fonts/Poppins-Bold.ttf
+    - family: CustomFontMedium # Use this name in your SVG and Text widgets
+      fonts:
+        - asset: fonts/Poppins-Medium.ttf
+    - family: CustomFontRegular # Use this name in your SVG and Text widgets
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+    - family: CustomFontSemiBold # Use this name in your SVG and Text widgets
+      fonts:
+        - asset: fonts/Poppins-SemiBold.ttf
