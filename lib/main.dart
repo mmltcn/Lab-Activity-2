@@ -7,6 +7,7 @@ void main() {
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +15,8 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Breakfast',
+          title: const Text(
+            'Breakfast',
             style: TextStyle(
               fontFamily: 'CustomFontBold',
             ),
@@ -22,17 +24,18 @@ class MainApp extends StatelessWidget {
           leading: Container(
             padding: const EdgeInsets.only(left: 30.0),
             child: SvgPicture.asset('assets/icons/Arrow - Left 2.svg'),
-            ),
-          actions: [Container(
-            padding: const EdgeInsets.only(right: 40.0),
-            child: SvgPicture.asset('assets/icons/dots.svg'),
+          ),
+          actions: [
+            Container(
+              padding: const EdgeInsets.only(right: 40.0),
+              child: SvgPicture.asset('assets/icons/dots.svg'),
             ),
           ],
         ),
         body: Center(
           child: Column(
             children: [
-              SizedBox(height: 30,),
+              const SizedBox(height: 30),
               Material(
                 elevation: 6,
                 shadowColor: Colors.grey.shade100,
@@ -51,26 +54,27 @@ class MainApp extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(left: 15.0),
+                        padding: const EdgeInsets.only(left: 15.0),
                         child: SvgPicture.asset('assets/icons/Search.svg'),
                       ),
                       Container(
                         padding: const EdgeInsets.only(left: 16.0),
                         child: Opacity(
                           opacity: 0.3,
-                          child: const Text('Search Pancake',
-                          style: TextStyle(
-                            fontFamily: 'CustomFontRegular',
+                          child: const Text(
+                            'Search Pancake',
+                            style: TextStyle(
+                              fontFamily: 'CustomFontRegular',
+                            ),
                           ),
                         ),
-                        )
                       ),
-                      SizedBox(width: 80,),
+                      const SizedBox(width: 80),
                       Container(
                         padding: const EdgeInsets.only(right: 80.0),
-                        height: 24, 
-                        width: 1, 
-                        color: Colors.grey.withOpacity(0.3), 
+                        height: 24,
+                        width: 1,
+                        color: Colors.grey.withOpacity(0.3),
                         margin: const EdgeInsets.symmetric(horizontal: 8),
                       ),
                       Container(
@@ -80,37 +84,52 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20),
               Container(
                 padding: const EdgeInsets.only(right: 190.0),
-                child: Text('Category',
-                style: TextStyle(
-                  fontFamily: 'CustomFontSemiBold',
-                  fontSize: 22,
+                child: const Text(
+                  'Category',
+                  style: TextStyle(
+                    fontFamily: 'CustomFontSemiBold',
+                    fontSize: 22,
+                  ),
                 ),
               ),
-              ),
-              SizedBox(height: 20,),
-              Container(
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
+              const SizedBox(height: 20),
+              SizedBox(
+                height: 80,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
                   children: [
-                    Positioned(
-                      child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.blue.shade300,
+                    Container(
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade100,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 15),
+                            Container(
+                              width: 40,
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: SvgPicture.asset('assets/icons/pie.svg'),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(),
-                    Container(),
-                    Container(),
+                    // add more category items here
                   ],
                 ),
               ),
             ],
           ),
-          
         ),
       ),
     );
