@@ -5,6 +5,7 @@ void main() {
   runApp(const MainApp());
 }
 
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -33,7 +34,9 @@ class MainApp extends StatelessWidget {
           ],
         ),
         body: Center(
-          child: Column(
+          child: ListView(
+            padding: const EdgeInsets.only(left: 30),
+            scrollDirection: Axis.vertical,
             children: [
               const SizedBox(height: 30),
               Material(
@@ -77,15 +80,16 @@ class MainApp extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.3),
                         margin: const EdgeInsets.symmetric(horizontal: 8),
                       ),
-                      Container(
-                        child: SvgPicture.asset('assets/icons/Filter.svg'),
-                      ),
+                      SvgPicture.asset('assets/icons/Filter.svg'),
+                      
                     ],
                   ),
                 ),
               ),
+              
+              //Container 1
               const SizedBox(height: 20),
-              Container(
+                Container(
                 padding: const EdgeInsets.only(right: 190.0),
                 child: const Text(
                   'Category',
@@ -95,10 +99,11 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
+              
+              
+              //Container 2
               const SizedBox(height: 20),
-              Container(
-                padding: EdgeInsets.only(left: 30),
-                child: SizedBox(
+                SizedBox(
                 height: 100,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -217,9 +222,11 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
               ),
-              ),
+              
+              //Container 3
               SizedBox(height: 20,),
               Container(
+                child: Container(
                 padding: const EdgeInsets.only(left: 0),
                 child: const Text(
                   'Recommendastion for Diet',
@@ -229,8 +236,11 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
+              ),
+              
+              //Container 4
               Container(
-                padding: EdgeInsets.only(left: 30),
+                child: Container(
                 child: SizedBox(
                   height: 250,
                   child: ListView(
@@ -431,9 +441,12 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
+              ),
+              
+              //Container 5
               SizedBox(height: 20,),
               Container(
-                padding: const EdgeInsets.only(right: 215),
+                child: Container(
                 child: Text('Popular',
                 style: TextStyle(
                   fontFamily: 'CustomFontSemiBold',
@@ -441,13 +454,17 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Material(
+              ),
+              
+              //Container 6
+              Container(
+                child: Material(
                 elevation: 6,
                 shadowColor: Colors.grey.shade100,
                 borderRadius: BorderRadius.circular(20.0),
                 child: Container(
                   width: 300,
-                  height: 50,
+                  height: 90,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     border: Border.all(
@@ -459,13 +476,57 @@ class MainApp extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        padding: const EdgeInsets.only(left: 15.0),
                         child: SvgPicture.asset('assets/icons/blueberry-pancake.svg'),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              child: Text('Blueberry Pancake'),
+                            ),
+                            Container(
+                              child: Row(
+                                children: [
+                                  Container(
+                                    child: Text('Medium'),
+                                  ),
+                                  Container(
+                                    child: Container(
+                                      padding: const EdgeInsets.only(right: 80.0),
+                                      height: 24,
+                                      width: 1,
+                                      color: Colors.grey.withOpacity(0.3),
+                                      margin: const EdgeInsets.symmetric(horizontal: 8),
+                                    ),
+                                  ),
+                                  Container(
+                                    child: Text('30mins'),
+                                  ),
+                                  Container(
+                                    child: Container(
+                                      padding: const EdgeInsets.only(right: 80.0),
+                                      height: 24,
+                                      width: 1,
+                                      color: Colors.grey.withOpacity(0.3),
+                                      margin: const EdgeInsets.symmetric(horizontal: 8),
+                                    ),
+                                  ),
+                                  Container(
+                                    child: Text('230kCal'),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
+              ),
+              
+              //Container 7
             ],
           ),
         ),
