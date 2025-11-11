@@ -81,7 +81,33 @@ class MainApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20,),
-              Text('Category'),
+              Container(
+                padding: const EdgeInsets.only(right: 190.0),
+                child: Text('Category',
+                style: TextStyle(
+                  fontFamily: 'CustomFontSemiBold',
+                  fontSize: 22,
+                ),
+              ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Positioned(
+                      child: Container(
+                        height: 50,
+                        width: 50,
+                        color: Colors.blue.shade300,
+                      ),
+                    ),
+                    Container(),
+                    Container(),
+                    Container(),
+                  ],
+                ),
+              ),
             ],
           ),
           
