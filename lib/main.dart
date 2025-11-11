@@ -96,8 +96,10 @@ class MainApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              SizedBox(
-                height: 80,
+              Container(
+                padding: EdgeInsets.only(left: 30),
+                child: SizedBox(
+                height: 100,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -120,13 +122,106 @@ class MainApp extends StatelessWidget {
                               ),
                               child: SvgPicture.asset('assets/icons/pie.svg'),
                             ),
+                            SizedBox(height: 15,),
+                            Container(
+                              child: Text('Pie'),
+                            ),
                           ],
                         ),
                       ),
                     ),
-                    // add more category items here
+                    SizedBox(width: 20,),
+                    Container(
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade100,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 15),
+                            Container(
+                              width: 40,
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: SvgPicture.asset('assets/icons/pie.svg'),
+                            ),
+                            SizedBox(height: 15,),
+                            Container(
+                              child: Text('Pie'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 20,),
+                    Container(
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade100,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 15),
+                            Container(
+                              width: 40,
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: SvgPicture.asset('assets/icons/pie.svg'),
+                            ),
+                            SizedBox(height: 15,),
+                            Container(
+                              child: Text('Pie'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 20,),
+                    Container(
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade100,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 15),
+                            Container(
+                              width: 40,
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: SvgPicture.asset('assets/icons/pie.svg'),
+                            ),
+                            SizedBox(height: 15,),
+                            Container(
+                              child: Text('Pie'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
+              ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                padding: EdgeInsets.only(right: 140),
+                child: Text('Recommendation for Diet'),
               ),
             ],
           ),
