@@ -220,8 +220,226 @@ class MainApp extends StatelessWidget {
               ),
               SizedBox(height: 20,),
               Container(
-                padding: EdgeInsets.only(right: 140),
-                child: Text('Recommendation for Diet'),
+                padding: const EdgeInsets.only(left: 0),
+                child: const Text(
+                  'Recommendastion for Diet',
+                  style: TextStyle(
+                    fontFamily: 'CustomFontSemiBold',
+                    fontSize: 22,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(left: 30),
+                child: SizedBox(
+                  height: 250,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Container(
+                      width: 200,
+                      height: 400,
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade100,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 15),
+                            Container(
+                              width: 120,
+                              padding: const EdgeInsets.only(top: 10),
+                              child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
+                              height: 120,
+                            ),
+                            Container(
+                              child: Text('Pie',
+                              style: TextStyle(
+                                fontFamily: 'CustomFontSemiBold',
+                                fontSize: 16,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(left: 20),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    child: Opacity(
+                                      opacity: 0.3,
+                                      child: Text('Easy',
+                                    style: TextStyle(
+                                      fontFamily: 'CustomFontRegular',
+                                      fontSize: 12
+                                      ),
+                                    ),
+                                      )
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(right: 80.0),
+                                    height: 24,
+                                    width: 1,
+                                    color: Colors.grey.withOpacity(0.3),
+                                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                                  ),
+                                  Container(
+                                    child: Opacity(
+                                      opacity: 0.4,
+                                      child: Text('30mins',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      ),
+                                    ),
+                                    )
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(right: 80.0),
+                                    height: 24,
+                                    width: 1,
+                                    color: Colors.grey.withOpacity(0.3),
+                                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                                  ),
+                                  Container(
+                                    child: Opacity(
+                                      opacity: 0.4,
+                                      child: Text('180kCal',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                      ),),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              child: Center(
+                                child: ElevatedButton(
+                                onPressed: (){}, 
+                                  child: Text('View',
+                                  style: TextStyle(
+                                    color: Colors.white
+                                  ),
+                                  ),
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(Colors.blue)
+                                ),
+                              ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 20,),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade100,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            const SizedBox(height: 15),
+                            Container(
+                              width: 120,
+                              padding: const EdgeInsets.only(top: 10),
+                              child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
+                              height: 120,
+                            ),
+                            Container(
+                              child: Text('Pie',
+                              style: TextStyle(
+                                fontFamily: 'CustomFontSemiBold',
+                                fontSize: 16,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(left: 20),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    child: Opacity(
+                                      opacity: 0.3,
+                                      child: Text('Easy',
+                                    style: TextStyle(
+                                      fontFamily: 'CustomFontRegular',
+                                      fontSize: 12
+                                      ),
+                                    ),
+                                      )
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(right: 80.0),
+                                    height: 24,
+                                    width: 1,
+                                    color: Colors.grey.withOpacity(0.3),
+                                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                                  ),
+                                  Container(
+                                    child: Opacity(
+                                      opacity: 0.4,
+                                      child: Text('30mins',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      ),
+                                    ),
+                                    )
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.only(right: 80.0),
+                                    height: 24,
+                                    width: 1,
+                                    color: Colors.grey.withOpacity(0.3),
+                                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                                  ),
+                                  Container(
+                                    child: Opacity(
+                                      opacity: 0.4,
+                                      child: Text('180kCal',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                      ),),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              child: Center(
+                                child: ElevatedButton(
+                                onPressed: (){}, 
+                                  child: Text('View',
+                                  style: TextStyle(
+                                    color: Colors.white
+                                  ),
+                                  ),
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(Colors.blue)
+                                ),
+                              ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.only(right: 215),
+                child: Text('Popular',
+                style: TextStyle(
+                  fontFamily: 'CustomFontSemiBold',
+                  fontSize: 22,
+                  ),
+                ),
               ),
             ],
           ),
