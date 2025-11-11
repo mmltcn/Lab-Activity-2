@@ -250,8 +250,8 @@ class MainApp extends StatelessWidget {
                             Container(
                               width: 120,
                               padding: const EdgeInsets.only(top: 10),
-                              child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
                               height: 120,
+                              child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
                             ),
                             Container(
                               child: Text('Pie',
@@ -315,15 +315,15 @@ class MainApp extends StatelessWidget {
                             Container(
                               child: Center(
                                 child: ElevatedButton(
-                                onPressed: (){}, 
+                                onPressed: (){},
+                                style: ButtonStyle(
+                                  backgroundColor: WidgetStateProperty.all(Colors.blue)
+                                ), 
                                   child: Text('View',
                                   style: TextStyle(
                                     color: Colors.white
                                   ),
                                   ),
-                                style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(Colors.blue)
-                                ),
                               ),
                               ),
                             ),
@@ -346,8 +346,8 @@ class MainApp extends StatelessWidget {
                             Container(
                               width: 120,
                               padding: const EdgeInsets.only(top: 10),
-                              child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
                               height: 120,
+                              child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
                             ),
                             Container(
                               child: Text('Pie',
@@ -411,15 +411,15 @@ class MainApp extends StatelessWidget {
                             Container(
                               child: Center(
                                 child: ElevatedButton(
-                                onPressed: (){}, 
+                                onPressed: (){},
+                                style: ButtonStyle(
+                                  backgroundColor: WidgetStateProperty.all(Colors.blue)
+                                ), 
                                   child: Text('View',
                                   style: TextStyle(
                                     color: Colors.white
                                   ),
                                   ),
-                                style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(Colors.blue)
-                                ),
                               ),
                               ),
                             ),
@@ -438,6 +438,31 @@ class MainApp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'CustomFontSemiBold',
                   fontSize: 22,
+                  ),
+                ),
+              ),
+              Material(
+                elevation: 6,
+                shadowColor: Colors.grey.shade100,
+                borderRadius: BorderRadius.circular(20.0),
+                child: Container(
+                  width: 300,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    border: Border.all(
+                      color: Colors.transparent,
+                      width: 2.0,
+                      style: BorderStyle.solid,
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.only(left: 15.0),
+                        child: SvgPicture.asset('assets/icons/blueberry-pancake.svg'),
+                      ),
+                    ],
                   ),
                 ),
               ),

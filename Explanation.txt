@@ -1,0 +1,18 @@
+- Explain what each major widget (e.g., Scaffold, Column, Container, Text) does in your layout.
+    -My major Widgets are the 
+-Scaffold – Provides the basic structure for your app’s screen, including areas for the app bar, body, and other UI elements. It’s like the main layout foundation of the page.
+
+-Material – Gives the app a Material Design look and feel, enabling visual styling and animations that follow Google’s Material guidelines.
+
+-Column – Arranges its child widgets vertically (from top to bottom). Useful for stacking text, buttons, or other widgets in a vertical layout.
+
+-Container – A flexible box that can hold other widgets. You can style it with colors, padding, margins, and borders to control spacing and appearance.
+
+-Text – Displays a string of text with customizable style such as font size, color, and weight.
+
+-ListView – A scrollable list of widgets arranged vertically or horizontally. It’s used when you have multiple items that might not all fit on one screen.
+
+-Row – Similar to a Column, but it arranges its child widgets horizontally (from left to right).
+
+- Describe how you arranged them to achieve the UI.
+    - Materialpp then Scaffold then Columns I have the Idea sir but I'm out of time :>. But this code sir is hard coded by myself onyl help some syntax from internet.
