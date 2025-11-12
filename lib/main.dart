@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -38,19 +40,17 @@ class MainApp extends StatelessWidget {
             padding: const EdgeInsets.only(left: 30),
             scrollDirection: Axis.vertical,
             children: [
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
               Material(
                 elevation: 6,
                 shadowColor: Colors.grey.shade100,
                 borderRadius: BorderRadius.circular(20.0),
                 child: Container(
-                  width: 300,
-                  height: 50,
+                  height: 60,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     border: Border.all(
                       color: Colors.transparent,
-                      width: 2.0,
                       style: BorderStyle.solid,
                     ),
                   ),
@@ -81,13 +81,12 @@ class MainApp extends StatelessWidget {
                         margin: const EdgeInsets.symmetric(horizontal: 8),
                       ),
                       SvgPicture.asset('assets/icons/Filter.svg'),
-                      
                     ],
                   ),
                 ),
               ),
               
-              //Container 1
+              SizedBox(height: 20,),
               const SizedBox(height: 20),
                 Container(
                 padding: const EdgeInsets.only(right: 190.0),
@@ -104,117 +103,113 @@ class MainApp extends StatelessWidget {
               //Container 2
               const SizedBox(height: 20),
                 SizedBox(
-                height: 100,
+                height: 125,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      width: 80,
+                      width: 100,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                         child: Column(
                           children: [
                             const SizedBox(height: 15),
                             Container(
-                              width: 40,
-                              padding: const EdgeInsets.all(10),
+                              width: 50,
+                              height: 50,
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(18),
+                                borderRadius: BorderRadius.circular(50),
                               ),
                               child: SvgPicture.asset('assets/icons/pie.svg'),
                             ),
                             SizedBox(height: 15,),
-                            Container(
-                              child: Text('Pie'),
-                            ),
+                              Text('Pie'),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(width: 20,),
                     Container(
-                      width: 80,
+                      width: 100,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                         child: Column(
                           children: [
                             const SizedBox(height: 15),
                             Container(
-                              width: 40,
-                              padding: const EdgeInsets.all(10),
+                              width: 50,
+                              height: 50,
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(18),
+                                borderRadius: BorderRadius.circular(50),
                               ),
                               child: SvgPicture.asset('assets/icons/pie.svg'),
                             ),
                             SizedBox(height: 15,),
-                            Container(
-                              child: Text('Pie'),
-                            ),
+                            Text('Pie'),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(width: 20,),
                     Container(
-                      width: 80,
+                      width: 100,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                         child: Column(
                           children: [
                             const SizedBox(height: 15),
                             Container(
-                              width: 40,
-                              padding: const EdgeInsets.all(10),
+                              width: 50,
+                              height: 50,
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(18),
+                                borderRadius: BorderRadius.circular(50),
                               ),
                               child: SvgPicture.asset('assets/icons/pie.svg'),
                             ),
                             SizedBox(height: 15,),
-                            Container(
-                              child: Text('Pie'),
-                            ),
+                            Text('Pie'),
                           ],
                         ),
                       ),
                     ),
                     SizedBox(width: 20,),
                     Container(
-                      width: 80,
+                      width: 100,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                         child: Column(
                           children: [
                             const SizedBox(height: 15),
                             Container(
-                              width: 40,
-                              padding: const EdgeInsets.all(10),
+                              width: 50,
+                              height: 50,
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(18),
+                                borderRadius: BorderRadius.circular(50),
                               ),
                               child: SvgPicture.asset('assets/icons/pie.svg'),
                             ),
                             SizedBox(height: 15,),
-                            Container(
-                              child: Text('Pie'),
-                            ),
+                            Text('Pie'),
                           ],
                         ),
                       ),
@@ -226,7 +221,6 @@ class MainApp extends StatelessWidget {
               //Container 3
               SizedBox(height: 20,),
               Container(
-                child: Container(
                 padding: const EdgeInsets.only(left: 0),
                 child: const Text(
                   'Recommendastion for Diet',
@@ -236,12 +230,8 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
-              ),
-              
-              //Container 4
-              Container(
-                child: Container(
-                child: SizedBox(
+              SizedBox(height: 20,),
+              SizedBox(
                   height: 250,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
@@ -251,7 +241,7 @@ class MainApp extends StatelessWidget {
                       height: 400,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                         child: Column(
@@ -263,20 +253,18 @@ class MainApp extends StatelessWidget {
                               height: 120,
                               child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
                             ),
-                            Container(
-                              child: Text('Pie',
+                              Text('Pie',
                               style: TextStyle(
                                 fontFamily: 'CustomFontSemiBold',
                                 fontSize: 16,
                                 ),
                               ),
-                            ),
+                            
                             Container(
                               padding: const EdgeInsets.only(left: 20),
                               child: Row(
                                 children: [
-                                  Container(
-                                    child: Opacity(
+                                    Opacity(
                                       opacity: 0.3,
                                       child: Text('Easy',
                                     style: TextStyle(
@@ -284,8 +272,7 @@ class MainApp extends StatelessWidget {
                                       fontSize: 12
                                       ),
                                     ),
-                                      )
-                                  ),
+                                      ),
                                   Container(
                                     padding: const EdgeInsets.only(right: 80.0),
                                     height: 24,
@@ -293,16 +280,14 @@ class MainApp extends StatelessWidget {
                                     color: Colors.grey.withOpacity(0.3),
                                     margin: const EdgeInsets.symmetric(horizontal: 8),
                                   ),
-                                  Container(
-                                    child: Opacity(
+                                    Opacity(
                                       opacity: 0.4,
                                       child: Text('30mins',
                                     style: TextStyle(
                                       fontSize: 14,
                                       ),
                                     ),
-                                    )
-                                  ),
+                                    ),
                                   Container(
                                     padding: const EdgeInsets.only(right: 80.0),
                                     height: 24,
@@ -310,20 +295,18 @@ class MainApp extends StatelessWidget {
                                     color: Colors.grey.withOpacity(0.3),
                                     margin: const EdgeInsets.symmetric(horizontal: 8),
                                   ),
-                                  Container(
-                                    child: Opacity(
+                                    Opacity(
                                       opacity: 0.4,
                                       child: Text('180kCal',
                                       style: TextStyle(
                                         fontSize: 14,
                                       ),),
                                     ),
-                                  ),
                                 ],
                               ),
                             ),
-                            Container(
-                              child: Center(
+                            SizedBox(height: 10,),
+                              Center(
                                 child: ElevatedButton(
                                 onPressed: (){},
                                 style: ButtonStyle(
@@ -336,7 +319,6 @@ class MainApp extends StatelessWidget {
                                   ),
                               ),
                               ),
-                            ),
                           ],
                         ),
                       ),
@@ -347,7 +329,7 @@ class MainApp extends StatelessWidget {
                       height: 200,
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
                         child: Column(
@@ -359,20 +341,17 @@ class MainApp extends StatelessWidget {
                               height: 120,
                               child: SvgPicture.asset('assets/icons/honey-pancakes.svg'),
                             ),
-                            Container(
-                              child: Text('Pie',
+                              Text('Pie',
                               style: TextStyle(
                                 fontFamily: 'CustomFontSemiBold',
                                 fontSize: 16,
                                 ),
                               ),
-                            ),
                             Container(
                               padding: const EdgeInsets.only(left: 20),
                               child: Row(
                                 children: [
-                                  Container(
-                                    child: Opacity(
+                                  Opacity(
                                       opacity: 0.3,
                                       child: Text('Easy',
                                     style: TextStyle(
@@ -380,8 +359,8 @@ class MainApp extends StatelessWidget {
                                       fontSize: 12
                                       ),
                                     ),
-                                      )
-                                  ),
+                                      ),
+                                  
                                   Container(
                                     padding: const EdgeInsets.only(right: 80.0),
                                     height: 24,
@@ -389,16 +368,14 @@ class MainApp extends StatelessWidget {
                                     color: Colors.grey.withOpacity(0.3),
                                     margin: const EdgeInsets.symmetric(horizontal: 8),
                                   ),
-                                  Container(
-                                    child: Opacity(
+                                    Opacity(
                                       opacity: 0.4,
                                       child: Text('30mins',
                                     style: TextStyle(
                                       fontSize: 14,
                                       ),
                                     ),
-                                    )
-                                  ),
+                                    ),
                                   Container(
                                     padding: const EdgeInsets.only(right: 80.0),
                                     height: 24,
@@ -406,20 +383,18 @@ class MainApp extends StatelessWidget {
                                     color: Colors.grey.withOpacity(0.3),
                                     margin: const EdgeInsets.symmetric(horizontal: 8),
                                   ),
-                                  Container(
-                                    child: Opacity(
+                                  Opacity(
                                       opacity: 0.4,
                                       child: Text('180kCal',
                                       style: TextStyle(
                                         fontSize: 14,
                                       ),),
                                     ),
-                                  ),
                                 ],
                               ),
                             ),
-                            Container(
-                              child: Center(
+                            SizedBox(height: 10,),
+                              Center(
                                 child: ElevatedButton(
                                 onPressed: (){},
                                 style: ButtonStyle(
@@ -432,7 +407,6 @@ class MainApp extends StatelessWidget {
                                   ),
                               ),
                               ),
-                            ),
                           ],
                         ),
                       ),
@@ -440,25 +414,14 @@ class MainApp extends StatelessWidget {
                     ],
                   ),
                 ),
-              ),
-              ),
-              
-              //Container 5
               SizedBox(height: 20,),
-              Container(
-                child: Container(
-                child: Text('Popular',
+                Text('Popular',
                 style: TextStyle(
                   fontFamily: 'CustomFontSemiBold',
                   fontSize: 22,
                   ),
                 ),
-              ),
-              ),
-              
-              //Container 6
-              Container(
-                child: Material(
+              Material(
                 elevation: 6,
                 shadowColor: Colors.grey.shade100,
                 borderRadius: BorderRadius.circular(20.0),
@@ -475,58 +438,44 @@ class MainApp extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Container(
-                        child: SvgPicture.asset('assets/icons/blueberry-pancake.svg'),
-                      ),
-                      Container(
-                        child: Column(
+                      SvgPicture.asset('assets/icons/blueberry-pancake.svg'),
+                        Column(
                           children: [
-                            Container(
-                              child: Text('Blueberry Pancake'),
-                            ),
-                            Container(
-                              child: Row(
+                            Text('Blueberry Pancake'),
+                              Row(
                                 children: [
-                                  Container(
-                                    child: Text('Medium'),
-                                  ),
-                                  Container(
-                                    child: Container(
+                                    Opacity(
+                                      opacity: 0.4,
+                                      child: Text('Medium',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      ),
+                                    ),
+                                    ),
+                                    Container(
                                       padding: const EdgeInsets.only(right: 80.0),
                                       height: 24,
                                       width: 1,
                                       color: Colors.grey.withOpacity(0.3),
                                       margin: const EdgeInsets.symmetric(horizontal: 8),
                                     ),
-                                  ),
-                                  Container(
-                                    child: Text('30mins'),
-                                  ),
-                                  Container(
-                                    child: Container(
+                                    Text('30mins'),
+                                    Container(
                                       padding: const EdgeInsets.only(right: 80.0),
                                       height: 24,
                                       width: 1,
                                       color: Colors.grey.withOpacity(0.3),
                                       margin: const EdgeInsets.symmetric(horizontal: 8),
                                     ),
-                                  ),
-                                  Container(
-                                    child: Text('230kCal'),
-                                  ),
+                                    Text('230kCal'),
                                 ],
                               ),
-                            )
                           ],
                         ),
-                      ),
                     ],
                   ),
                 ),
               ),
-              ),
-              
-              //Container 7
             ],
           ),
         ),
