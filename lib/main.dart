@@ -421,13 +421,14 @@ class MainApp extends StatelessWidget {
                   fontSize: 22,
                   ),
                 ),
+              SizedBox(height: 15,),
               Material(
                 elevation: 6,
                 shadowColor: Colors.grey.shade100,
                 borderRadius: BorderRadius.circular(20.0),
                 child: Container(
                   width: 300,
-                  height: 90,
+                  height: 110,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     border: Border.all(
@@ -438,14 +439,25 @@ class MainApp extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      SvgPicture.asset('assets/icons/blueberry-pancake.svg'),
-                        Column(
+                      SizedBox(width: 25,),
+                      Container(
+                              width: 75,
+                              padding: const EdgeInsets.only(top: 10),
+                              height: 75,
+                              child: SvgPicture.asset('assets/icons/blueberry-pancake.svg'),
+                            ),
+                        Container(
+                          padding: const EdgeInsets.only(left: 1),
+                          child: Column(
                           children: [
                             Text('Blueberry Pancake'),
-                              Row(
+                            Container(
+                              padding: const EdgeInsets.only(left: 65),
+                              child: Center(
+                                child: Row(
                                 children: [
                                     Opacity(
-                                      opacity: 0.4,
+                                      opacity: 0.5,
                                       child: Text('Medium',
                                     style: TextStyle(
                                       fontSize: 14,
@@ -459,7 +471,14 @@ class MainApp extends StatelessWidget {
                                       color: Colors.grey.withOpacity(0.3),
                                       margin: const EdgeInsets.symmetric(horizontal: 8),
                                     ),
-                                    Text('30mins'),
+                                    Opacity(
+                                      opacity: 0.5,
+                                      child: Text('30mins',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      ),
+                                    ),
+                                    ),
                                     Container(
                                       padding: const EdgeInsets.only(right: 80.0),
                                       height: 24,
@@ -467,10 +486,21 @@ class MainApp extends StatelessWidget {
                                       color: Colors.grey.withOpacity(0.3),
                                       margin: const EdgeInsets.symmetric(horizontal: 8),
                                     ),
-                                    Text('230kCal'),
+                                    Opacity(
+                                      opacity: 0.5,
+                                      child: Text('230kCal',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      ),
+                                    ),
+                                    ),
                                 ],
                               ),
+                              
+                            ),
+                            ),
                           ],
+                        ),
                         ),
                     ],
                   ),
