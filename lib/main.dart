@@ -102,7 +102,7 @@ class MainApp extends StatelessWidget {
               
               //Container 2
               const SizedBox(height: 20),
-                SizedBox(
+              SizedBox(
                 height: 125,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -217,7 +217,6 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
               ),
-              
               //Container 3
               SizedBox(height: 20,),
               Container(
